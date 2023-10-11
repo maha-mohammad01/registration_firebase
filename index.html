@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registeretion Form -OCA</title>
+    </head>
+
+<script>
+
+
+</script>
+
+
+    <body>
+        <form action="confirm.html" methode="get" onsubmit="return validateform()">
+            <table>
+                <caption>User Registration Form</caption>
+                <tr>
+                    <td><label for="uname">User Name</label> </td>
+                    <td><input type="text" id="uname" name="uname" required pattern="^\S+$"></td>
+                </tr>
+                 <tr>
+                    <td><label for="password">Password</label></td>
+                    <td> <input type="password" id="password" name="password" required ></td>
+                </tr> 
+                <tr>
+                    <td><label for="email">Email</label></td>
+                    <td><input type="email" name="email" id="email" required placeholder="someone@domain.com" ></td>
+                </tr>
+                <tr>
+                    <td> <label for="phone">Phone</td>
+                    <td><input type="tel" id="phone" name="phone" required pattern="^07\d{8}$"></td>
+                </tr>
+                <td colspan="2"><button type="submit" id="submit">Submit</button></td></tr>
+
+            </table>
+        </form>
+        <script src="app.js" type="module"></script>
+
+    </body>
+</html>
